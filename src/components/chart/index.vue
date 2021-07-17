@@ -4,6 +4,9 @@
 </template>
 
 <script>
+// eslint-disable-next-line
+import mdMap from 'md-map';
+
 export default {
   name: 'Chart',
   props: {
@@ -12,7 +15,7 @@ export default {
   watch: {
     md(newValue, oldValue) {
       if (newValue !== oldValue) {
-        // update
+        console.log(mdMap.parse(newValue));
       }
     },
   },
